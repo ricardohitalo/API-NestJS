@@ -11,7 +11,7 @@ services:
       - pg-data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: pguser
-      POSTGRES_PASWORD: pgpassword
+      POSTGRES_PASSWORD: pgpassword
 
   adminer:
     image: adminer
@@ -20,4 +20,4 @@ services:
       - '8080:8080'
 
 volumes:
-  pg-data:  
+  pg-data:
